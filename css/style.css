@@ -8,19 +8,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #b7b7b7;
 
+}
+
+.marginTop{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+.malefield{
+    background: #625984;
+    border-radius: 10px;
 }
 .main{
     padding: 50px 30px;
     border-radius: 10px;
-    background: #676565;
+   
     display: flex;
     flex-direction: column;
     width: 400px;
     height: 350px;
     row-gap: 25px;
 }
-
 
 input, .submit{
     padding: 10px 20px;
@@ -54,26 +65,71 @@ input, .submit{
 }
 
 
-.result{
-    color: rgb(25, 247, 25);
+.heightfield .heightErrorf,
+.weightfield .weightErrorf
+{
+    position: absolute;
+    top: 100%;
+    transform: translateY(2px);
+    color: red;
+    font-size: 14px;
+}
+
+.result, .resultf{
+    color: rgb(39, 2, 245);
     font-size: 26px;
 }
 
 
-.maleFemal{
+
+.twobtn{
     display: flex;
     justify-content: center;
-    column-gap: 40px;
-    margin-bottom: 30px;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 20px;
 }
-.male,.female{
-    background: #569fec;;
+
+.femalebtn{
+    background: #c71ee9;;
     padding: 20px 40px;
     border-radius: 10px;
     border: none;
+    color: white;
+    border: 2px solid green;
+}
+.malebtn{
+    background: #f4308b;;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    border: 2px solid green;
+
 }
 
 
-.femaleContent{
+.femalefield{
     display: none;
+    background: #17be57;
+    border-radius: 10px;
+
 }
+
+.femalesubmit{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: transparent;
+    outline: none;
+    color: white;
+    transition: all .5s;
+    width: 100%;
+}
+.femalesubmit:hover{
+    background: #787676;
+    cursor: pointer;
+}
+
+
+
